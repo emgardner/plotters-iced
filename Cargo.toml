@@ -17,13 +17,7 @@ authors = ["Joylei <leingliu@gmail.com>"]
 members = [".", "examples/split-chart"]
 
 [workspace.dependencies]
-# iced = { git = "https://github.com/airstrike/iced.git", branch = "master", default-features = false, features = [
-#     "canvas",
-#     "tokio",
-#     "advanced",
-#     "wgpu",
-# ] }
-iced = { version = "0.14.0-dev", default-features = false, features = [
+iced = { version = "0.14.0", default-features = false, features = [
     "tokio",
     "markdown",
     "canvas",
@@ -44,12 +38,6 @@ plotters = { version = "0.3", default-features = false }
 plotters-backend = "0.3"
 once_cell = "1"
 
-# [target.'cfg(target_arch = "wasm32")'.dependencies]
-# iced = { git = "https://github.com/airstrike/iced.git", branch = "master", features = [
-#     "canvas",
-#     "debug",
-#     "webgl",
-# ] }
 
 [dev-dependencies]
 plotters = { version = "0.3", default-features = false, features = [
